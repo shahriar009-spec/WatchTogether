@@ -25,7 +25,7 @@ st.caption("Watch videos and chat with friends.")
 @st.cache_resource
 def get_supabase():
     url = st.secrets["https://qpsiuborxailivktpght.supabase.co"]
-    key = st.secrets["sb_secret_gU8NQnHJVzfM2Z32bV52aw_JrKfn6wL"]
+    key = st.secrets["eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFwc2l1Ym9yeGFpbGl2a3RwZ2h0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTMxODk5MTgsImV4cCI6MjEwODc2NTkxOH0.BLUfpU7Y1cDgAFVGUcBnKvNpbN3vSsx4w-aGjLYAoNs"]
     return create_client(url, key)
 
 try:
